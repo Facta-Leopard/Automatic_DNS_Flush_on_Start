@@ -3,13 +3,13 @@ Maker : Facta_Leopard
 
 Contact : teosis24@naver.com
 
-Github : https://github.com/Facta-Leopard/Automatic_DNS_Flush_at_Shutdown
+Github : https://github.com/Facta-Leopard/Automatic_DNS_Flush_on_Start
 ---
 
 ---
 English : 
 
-Secret Mode leaves DNS logs, so you need to delete these traces. This program creates a scheduled task using a batch file. When your computer shuts down, it automatically flushes the DNS cache. (Works only on Windows)
+Secret Mode leaves DNS logs, so you need to delete these traces. This program creates a scheduled task using a batch file. When your computer on Start, it automatically flushes the DNS cache. (Works only on Windows)
 
 This Program is for the Man.
 ---
@@ -25,7 +25,7 @@ This Program is for the Man.
 
 그래서 DNS를 Flush하는 배치파일을 레지스트리에 등록해서, 컴퓨터가 종료될 때 실행되도록 만들었었으나, 이상하게 안되서.. 윈도우 스케듈러에 포함시키는 방법을 썻습니다.
 
-무슨 말이냐면, 컴터 끄면 자동으로 DNS 정보를 지워서 어느 사이트에 접속했었는지를 지운다는 말이에요.
+무슨 말이냐면, 컴터 키면 자동으로 DNS 정보를 지워서 어느 사이트에 접속했었는지를 지우도록 만들었다는 거에요.
 
 윈도우에서만 작동합니다.
 
@@ -33,7 +33,7 @@ This Program is for the Man.
 
 (그래서 설치할 때 분명히 물어봤습니다?)
 
-만약, 컴터 안 끄고 바로바로 DNS 지우고 싶다면,
+만약, 컴터 켰을 때가 아니라 바로바로 DNS 지우고 싶다면,
 
 웹브라우저 관련 레지스트리에 별도 값을 수동으로 넣으면 되는데, 그게 귀찮아서 종료시에 되도록 등록한 거라..
 
@@ -46,6 +46,10 @@ This Program is for the Man.
 시행착오가 너무 많네요.
 
 이거하면서 온갖 권한 등 문제를 겪다보니 윈도우 운영체제를 더 잘 알게되었네요.
+
+뭔 놈의 권한 문제를 이렇게 빡빡하게 박아두는지..
+
+우회에 우회에, 별별방법 다 써서 결국 성공했지만, C++17 constexpr 문법 보는 느낌이였네요.
 
 
 
